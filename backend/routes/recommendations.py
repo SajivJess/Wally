@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Query
 from typing import List
-from ..models import SmartTip, SmartTipCreate, RefillAlert, RefillAlertCreate
-from ..database import smart_tips_collection, refill_alerts_collection
+from models import SmartTip, SmartTipCreate, RefillAlert, RefillAlertCreate
+from database import smart_tips_collection, refill_alerts_collection
 
 router = APIRouter(prefix="/recommendations", tags=["recommendations"])
 
