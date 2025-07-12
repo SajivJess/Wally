@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from typing import List
-from ..models import LoyaltyMission, LoyaltyMissionCreate
-from ..database import loyalty_missions_collection
+from models import LoyaltyMission, LoyaltyMissionCreate
+from database import loyalty_missions_collection
 import random
 
 router = APIRouter(prefix="/missions", tags=["missions"])
