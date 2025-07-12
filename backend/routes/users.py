@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from typing import List
-from ..models import User, UserCreate, UserProfile, CartSummary
-from ..database import users_collection, cart_items_collection, loyalty_missions_collection
+from models import User, UserCreate, UserProfile, CartSummary
+from database import users_collection, cart_items_collection, loyalty_missions_collection
 
 router = APIRouter(prefix="/users", tags=["users"])
 
