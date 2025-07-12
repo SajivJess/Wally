@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, Query
 from typing import List, Optional
-from ..models import Product, ProductCreate, Bundle, BundleCreate
-from ..database import products_collection, bundles_collection
+from models import Product, ProductCreate, Bundle, BundleCreate
+from database import products_collection, bundles_collection
 
 router = APIRouter(prefix="/products", tags=["products"])
 
