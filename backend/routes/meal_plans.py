@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, Query
 from typing import List, Optional
-from ..models import MealPlan, MealPlanCreate
-from ..database import meal_plans_collection
+from models import MealPlan, MealPlanCreate
+from database import meal_plans_collection
 
 router = APIRouter(prefix="/meal-plans", tags=["meal-plans"])
 
